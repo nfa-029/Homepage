@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --header-background: #3b5d50;
+}
+body{
+    background-color: #eff2f1;
+}
+/* Navigation Bar */
+.navbar{
+    background-color: var(--header-background);
+    display: flex;
+    max-width: 100%;
+    min-height: 8vh;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap:3rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+#logo img{
+    margin-top:1px;
+}
+.navbar ul li{
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    opacity: 0.7;
+    transition: text-decoration 0.3s ease;
+}
+.navbar ul li a:hover{
+    text-decoration: underline #f9bf29 ;
+    text-decoration-thickness: 2.8px;
+    opacity: 1;
+}
+#profile-icons{
+    display: flex;
+    justify-self: end;
+    gap:1rem;
+    margin-left: 50%;
+}
+#profile-icons > * {
+    flex: 1;
+}
+header{
+    background-color: var(--header-background);
+    min-height: 70vh;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    gap:5rem;
+    z-index: 0;
+}
+#header-text{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    max-height: 20vh;
+    max-width: 30%;
+    border: 2px solid white;
+    flex:1 100px;
+    margin-left: 14%;
+    margin-bottom: 11%;
+}
+#dotted{
+    position: absolute;
+    z-index: 0;
+    top:20.5%;
+    right:7.3%;
+    flex: 1;
+}
+#couch-1{
+    z-index: 2;
+    margin-top: 4%;
+    margin-right: 7%;
+    flex: 1 100px; 
+    max-width: 100%;
+}
+
+
