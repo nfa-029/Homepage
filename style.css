@@ -37,13 +37,6 @@ body {
 .font-btn {
   font-size: 0.75rem;
 }
-.input-box {
-  margin-top: 10px;
-  width: 300px;
-  padding: 15px;
-  border: 2px solid #c4c4c4;
-  border-radius: 10px;
-}
 .btn {
   border: none;
   border-radius: 25px;
@@ -349,69 +342,58 @@ h1 {
   max-width: 100%;
 }
 
-/* footer */
-footer {
-  background-color: #ffffff;
-  min-height: 100vh;
-  padding-top: 1px;
-}
-.newsletter-header {
+/* NEWSLETTER */
+.newsletter{
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 50px;
+  padding:0;
+  background-color: white
+}
+.newsletter-left{
+  display: flex;
   flex-direction: column;
   margin-top: 50px;
 }
-.newsletter-details {
+.newsletter-header{
   display: flex;
+  flex-direction: row;
+  justify-content:center;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
+  gap: var(--gap);
 }
-.send-btn {
+.newsletter-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter-img{
+
+}
+.input-box {
+  margin-top: 10px;
+  min-width: 100%;
+  padding: 15px;
+  border: 2px solid #c4c4c4;
+  border-radius: 10px;
+}
+.send-btn{
+  min-width: 50px;
+  max-height:50px;
   margin-top: 20px;
-  max-width: 50%;
-  max-height: 50%;
+  cursor: pointer;
 }
 .sofa-sm {
+  margin-top:10px;
   max-width: 100%;
+  height: auto;
 }
-.footer-text-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: var(--gap);
-  border: 1px solid black;
+.newsletter-right{
+  flex: 0;
 }
-.footer-text-container p {
-  opacity: 0.8;
-}
-.footer-text-container div {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
-}
-.footer-text-container div a {
-  opacity: 0.8;
-  flex: 1;
-}
-.social-media-icons {
-  margin-left: 15%;
-}
-.line {
-  border: 0.1px solid #c4c4c4;
-  width: 90%;
-  opacity: 0.5;
-  margin-left: 10px;
-}
-.copyright {
-  color: #807e7e; /* Example text color */
-  text-align: center;
-  margin-left: 20px;
-  padding: 5px;
-}
+/* FOOTER */
+
 /* Mobile First */
 @media only screen and (min-width: 768px) {
  /* ------- */
@@ -454,13 +436,6 @@ body {
 }
 .font-btn {
   font-size: 0.75rem;
-}
-.input-box {
-  margin-top: 10px;
-  width: 300px;
-  padding: 15px;
-  border: 2px solid #c4c4c4;
-  border-radius: 10px;
 }
 .btn {
   border: none;
@@ -757,76 +732,58 @@ header {
 .blog-posts img {
   
 }
-/*  */
-footer {
-  padding-top: 10px;
-  min-height: 150vh;
+/* NEWSLETTER */
+.newsletter{
+  display: flex;
+  /* flex-direction: row; */
   margin-top: 50px;
+  padding:0;
+  background-color: white
 }
-.newsletter-header {
+.newsletter-left{
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap:var(--gap);
-  margin-top: 120px;
+  flex-direction: column;
+  margin-top: 50px;
+  /* flex: 1; */
 }
-.newsletter-details {
+.newsletter-header{
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  justify-content:flex-start;
   align-items: center;
+  gap: var(--gap);
+}
+.newsletter-input{
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
-  max-width: 100%;
+  align-items: center;
+  max-width: 50%;
   gap: 1rem;
 }
-.send-btn {
-  margin-right: 50px;
+.newsletter-img{
+
+}
+.input-box {
+  flex: 1;
+  margin-top: 10px;
+  min-width: 100px;
+  padding: 15px;
+  border: 2px solid #c4c4c4;
+  border-radius: 10px;
+}
+.send-btn{
+  min-width: 50px;
+  max-height:50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.newsletter-right{
+  /* flex: 1; */
 }
 .sofa-sm {
-  margin-top: 0;
-  margin-bottom: 120px;
-  max-width: 50%;
-  max-height: 50%;
-  margin-right: 0;
+  max-height: 120px;
 }
-/* footer text */
-.footer-text-container {
-  flex-direction: row;
-  max-height: 20vh;
-  gap: var(--gap);
-  border: 1px solid black;
-}
-.footer-text-container p {
-  max-width: 20%;
-  opacity: 0.8;
-  flex: 1;
-  margin-right: 50px;
-}
-.footer-text-container div {
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: var(--gap);
-  flex: 1;
-  justify-content: space-between;
-}
-.footer-text-container div a {
-  opacity: 0.8;
-  flex: 0 0 calc(30% - 30px); 
-}
-.social-media-icons {
+/*  */
 
-}
-.line {
-  border: 0.1px solid #c4c4c4;
-  width: 90%;
-  opacity: 0.5;
-  margin-left: 10px;
-}
-.copyright {
-
-  text-align: left;
-  margin-left: 0;
-  padding: 5px;
-}
 }
